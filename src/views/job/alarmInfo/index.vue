@@ -437,13 +437,13 @@ export default {
             title: "应用名称",
             variable: "${appName}",
             prop: "appName",
-            value: "xxl-job",
+            value: "smart-job",
           },
           {
             title: "任务名称",
             variable: "${jobName}",
             prop: "jobName",
-            value: "xxl-job",
+            value: "smart-job",
           },
         ],
         [

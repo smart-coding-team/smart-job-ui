@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'smart-xxl-job',
+  title: 'smart-job',
 
   /**
    * 是否系统布局配置

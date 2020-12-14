@@ -26,7 +26,7 @@ export default {
   },
   data() {
     return {
-      title: 'xxl-job任务调度系统',
+      title: 'smart-job任务调度系统',
       logo: logoImg
     }
   }
@@ -48,7 +48,7 @@ export default {
   width: 100%;
   height: 50px;
   line-height: 50px;
-  background: #2b2f3a;
+  background: #6083ea;
   text-align: center;
   overflow: hidden;
 

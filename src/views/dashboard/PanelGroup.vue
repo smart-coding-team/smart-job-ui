@@ -78,11 +78,11 @@ export default {
   },
   data() {
     return {
-      successCount: parseInt(localStorage.getItem('countSucTotal')),
-      runningCount: parseInt(localStorage.getItem('countRunningTotal')),
-      countJobLogTotal: parseInt(localStorage.getItem('countJobLogTotal')),
-      countJobTotal: parseInt(localStorage.getItem('countJobTotal')),
-      countJobExecutorTotal: parseInt(localStorage.getItem('countJobExecutorTotal'))
+      successCount: parseInt(localStorage.getItem('countSucTotal'))||0,
+      runningCount: parseInt(localStorage.getItem('countRunningTotal'))||0,
+      countJobLogTotal: parseInt(localStorage.getItem('countJobLogTotal'))||0,
+      countJobTotal: parseInt(localStorage.getItem('countJobTotal'))||0,
+      countJobExecutorTotal: parseInt(localStorage.getItem('countJobExecutorTotal'))||0
     }
   },
   methods: {
