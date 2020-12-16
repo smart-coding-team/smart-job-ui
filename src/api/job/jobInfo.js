@@ -46,7 +46,12 @@ export function updateJob(data) {
     data
   })
 }
-
+export function copyJob(id) {
+  return request({
+    url: '/api/job/copy/'+id,
+    method: 'post'
+  })
+}
 export function createJob(data) {
   return request({
     url: '/api/job/add/',

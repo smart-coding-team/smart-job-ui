@@ -283,6 +283,7 @@
             </el-button>
             <el-dropdown-menu slot="dropdown">
               <el-dropdown-item @click.native="handlerViewLog(row)">查询日志</el-dropdown-item>
+              <el-dropdown-item @click.native="handlerCopy(row)" v-hasPermi="['job:jobInfo:copy']" >复制任务</el-dropdown-item>
               <el-dropdown-item
                 @click.native="handlerDelete(row)"
                 v-hasPermi="['job:jobInfo:remove']"
@@ -1113,6 +1114,19 @@ export default {
         path: "/job/jobLog",
         query: { jobId: row.id },
       });
+    },
+    //复制任务
+    handlerCopy(row) {
+        job.copyJob(row.id).then((response) => {
+        this.$notify({
+          title: "Success",
+          message: "Successfully",
+          type: "success",
+          duration: 2000,
+        });
+        this.handleQuery();
+      });
+      
     },
     handlerChangeJobCreateWay(row, status) {
       job.changeJobCreateWay(row.id, status).then((response) => {
