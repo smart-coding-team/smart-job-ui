@@ -10,7 +10,7 @@
     "build": "vue-cli-service build && yarn tar",
     "build:stage": "vue-cli-service build --mode staging",
     "preview": "node build/index.js --preview",
-    "tar": "cd dist && tar -zcvf html.tar.gz ./* && mv html.tar.gz ../",
+    "tar": "cd dist && tar -zcvf  smart-job-ui-v1.0.0.tar.gz ./* && mv smart-job-ui-v1.0.0.tar.gz ../",
     "lint": "eslint --ext .js,.vue src",
     "test:unit": "jest --clearCache && vue-cli-service test:unit",
     "test:ci": "npm run lint && npm run test:unit",
